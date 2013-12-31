@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'OmnesATT';
+  src: url("OmnesATT/OmnesATT-Regular.otf") format("opentype");
+}
+
+body {
+    background:#eee; 
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    height:100%; 
+    margin:25px 0; 
+    color: #5c5c5c;
+    overflow: hidden;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#pageContainer{
+    margin: 0 auto;
+    width: 450px;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #ccc;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ccc;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {  
+    color: #ccc;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+h1 {
+    font-size:38px; 
+    font-family:"OmnesATT"; 
+    margin:0;
+    color: #5c5c5c;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+input[type=text], textarea{
+    position: relative;
+    border: 1px solid #DDD;
+    padding: 6px 14px;
+    outline: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 10px;
+    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,.03);
+    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,.03);
+    box-shadow: inset 0 2px 1px rgba(0,0,0,.03);
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    width: 340px;
+    max-width: 100%;
+    display: inline;
+    background: #fff;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+background-color: #077ab3;
+}
+
+textarea{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+    color: #5c5c5c;
+
+}
+.msgContentForm{
+    display: table;
+    padding:20px;
+}
+
+.msgContentForm .input{
+    display: table-row;
+    vertical-align: top;
+}
+
+label{
+    display: table-cell;
+    text-align: right;
+    border-bottom: solid #eee 35px; 
+    border-right: solid #eee 10px; 
+    padding: 0;
+}
+
+.label{
+    display: table-cell;
+    text-align: right;
+    border-bottom: solid #eee 42px; 
+    border-right: solid #eee 10px; 
+    padding: 1px;
+    vertical-align: top;
+}
+
+
+.attbox {
+    position:absolute; 
+    display:none; 
+    padding:14px 17px; 
+    z-index:900;
+}
+
+.attinner {
+    padding:15px; 
+    background:#fff url(images/preload.gif) no-repeat 50% 50%; 
+    border-right:1px solid #333; 
+    border-bottom:1px solid #333; 
+    height:600px; 
+    overflow: hidden;
+}
+
+.attmask {
+    position:absolute; 
+    display:none; 
+    top:0px; left:0px; 
+    height:100%; 
+    width:100%; 
+    background:#000; 
+    z-index:800
+}
+
+.attclose:hover {
+    background-position:0 -30px
+}
+
+
+#frameless {
+    padding:0
+}
+
+.attclose {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 24px;
+    height: 21px;
+    cursor:pointer;
+    background:url(images/close.png) no-repeat
+}
+
+.attheader{
+    height:100px;
+    padding:10px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+#testdiv {
+    width:600px; 
+    margin:0px auto; 
+    border:1px solid #ccc; 
+    padding:20px 25px 12px; 
+    background:#fff
+}
+
+#testdiv span{
+    background: url("images/att1716.jpeg") no-repeat scroll transparent;
+    display: inline-block;
+    height: 31px;
+    margin: 0 10px;
+    text-indent: -9999px;
+    width: 31px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button-group{
+    //margin-top:40px;
+}
+
+button{
+    border-radius: 4px;
+    text-align: center;
+    display: inline;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px -1px 1px inset;
+    border: 1px solid rgb(226, 226, 226);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    font-weight: normal;
+    position: relative;
+    padding: 7px 20px;
+    width:45%;
+    margin:30px 5px
+
+
+}
+
+#cancel{
+    background-color: rgb(250, 250, 250);
+    background-image: -webkit-linear-gradient(top, rgb(251, 251, 251), rgb(249, 249, 249));
+    background-repeat: repeat-x;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.14902) 0px -1px 1px inset;
+    color: rgb(113, 136, 149);
+}
+
+#sendMessage{
+    background-color: #077ab3;
+    background-image: -moz-linear-gradient(top,#087fb6,#0573ae);
+    background-image: -ms-linear-gradient(top,#087fb6,#0573ae);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#087fb6),to(#0573ae));
+    background-image: -webkit-linear-gradient(top,#087fb6,#0573ae);
+    background-image: -o-linear-gradient(top,#087fb6,#0573ae);
+    background-image: linear-gradient(top,#087fb6,#0573ae);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#087fb6',endColorstr='#0573ae',GradientType=0);
+    border-color: #0573ae #0573ae #034264;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    behavior: url('/css/PIE.htc');
+    -webkit-box-shadow: inset 0 -3px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 -3px 1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 -3px 1px rgba(0,0,0,0.1);   
+    color: #FFFFFF;
+
+}
+
+
+

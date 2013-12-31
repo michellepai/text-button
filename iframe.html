@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="style.css" />
+<body style="overflow:hidden">
+    <div id="pageContainer">
+        <div id="content">
+            <div id="articleBody"></div>
+            <!-- SAMPLE APP CONTENT STARTS HERE! -->
+            <div class="formBox" id="formBox">
+                <div id="formContainer" class="formContainer">
+                    <div id="sendMessages">
+                        <form method="post" action="immn.jsp" name="msgContentForm">
+                            <div  class="msgContentForm">
+                                <div class="input">
+                                    <label>
+                                        To
+                                    </label>
+                                    <input placeholder="Enter up to ten mobile numbers, email or both" name="Address" type="text">
+                                </div>
+                                <div class="input">
+                                    <div class="label">
+                                        Message 
+                                    </div>
+                                    <textarea name="message" rows="2" cols="30">
+Hi, I thought you might like to see this
+http://www.webpageurl.com/newsarticle.html
+                                    </textarea>
+                                </div>
+                                <div class="input">
+                                    <label>
+
+                                    </label>
+                                    <input name="groupCheckBox" type="checkbox">Do not remember me on this browser                      
+                                </div>
+                                <div class="input">
+
+                                    <label>
+
+                                    </label>
+                                    <button id="cancel" type="button" class="submit">Cancel</button>
+                                    <button id="sendMessage" type="submit" class="submit">Send</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+
+                    </div> <!-- end of sendMessages -->
+
+                </div> <!-- end of formContainer -->
+
+                <!-- BEGIN HEADER CONTENT RESULTS -->
+
+
+            </div> <!-- end of formBox -->
+
+            <!-- SAMPLE APP CONTENT ENDS HERE! -->
+
+        </div>
+    </div>
+</body>
